@@ -1,0 +1,60 @@
+.contacts {
+
+  &__title {
+    font-size: 16px;
+    color: $color-white;
+    font-weight: 300;
+    opacity: 0.67;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:before {
+      content: "";
+      @include absolute-v-center;
+      width: 13px;
+      height: 12px;
+      background: url("../img/call-mini.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &--mail {
+      &:before {
+        background: url("../img/mail.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+    }
+
+    &--address {
+      &:before {
+        background: url("../img/point.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+    }
+  }
+
+  &__item-text {
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-white;
+    opacity: 0.67;
+    padding-left: 22px;
+  }
+}

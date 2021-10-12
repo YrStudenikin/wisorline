@@ -1,0 +1,31 @@
+.header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 90px;
+
+  &__inner {
+    @include flex-v-center;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    @include flex-all-center;
+  }
+
+  &__phone-btn {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    @include flex-all-center;
+    margin-right: 20px;
+  }
+
+  &__phone-text {
+    font-size: 16px;
+    color: $color-white;
+    font-weight: 400;
+  }
+}

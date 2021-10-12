@@ -1,0 +1,33 @@
+.request {
+  height: 980px;
+  background: url("../img/request-bg.png");
+  background-position-y: -300px;
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -100px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  &__title {
+    margin: 10px 0 30px;
+    max-width: 1030px;
+  }
+
+  &__subtitle {
+    color: #686868;
+    font-size: 18px;
+  }
+
+  &__btn {
+    width: 320px;
+    height: 73px;
+    margin-top: 55px;
+  }
+}

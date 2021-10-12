@@ -1,0 +1,64 @@
+.about {
+  z-index: 1;
+
+  &__container {
+    max-width: 1465px;
+  }
+
+  &__inner {
+    @include flex-v-center;
+    margin-top: -80px;
+  }
+
+  &__content {
+    width: 46%;
+    margin: 90px 30px 0 136px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -194px;
+      left: -32px;
+      width: 64px;
+      height: 145px;
+      background: url("../img/decor-romb.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__hint {
+    font-family: "EuropeExt", sans-serif;
+    font-size: 12px;
+    color: #d2d2d2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+
+  &__title {
+    font-family: "EuropeExt", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.2px;
+    color: #040810;
+    margin: 10px 0 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #686868;
+    line-height: 26px;
+
+    p:nth-child(2) {
+      margin-top: 30px;
+    }
+  }
+
+  &__text-accent {
+    font-weight: 500;
+  }
+
+  &__img {
+    width: 45%;
+  }
+}

@@ -1,0 +1,8 @@
+.socials {
+  @include flex-v-center;
+
+  &__item {
+    width: 25%;
+    @include flex-h-center;
+  }
+}

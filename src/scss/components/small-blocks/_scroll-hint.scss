@@ -1,0 +1,32 @@
+.scroll-hint {
+  @include absolute-v-center;
+  @include flex-v-center;
+  right: 95px;
+  writing-mode: tb-rl;
+  text-align: center;
+  cursor: default;
+
+  &__text {
+    font-family: 'EuropeExtItalic';
+    color: #c8c8c8;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+  }
+
+  &__arrow {
+    animation: slideArrow 2s ease-in infinite;
+  }
+
+  @keyframes slideArrow {
+    0% {
+      transform: translateY(-4px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+  }
+}

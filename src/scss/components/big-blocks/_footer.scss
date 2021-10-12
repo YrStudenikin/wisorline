@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  height: 850px;
+  background: url("../img/footer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  &__inner {
+    padding-top: 230px;
+    display: flex;
+  }
+
+  &__col:nth-child(1) {
+    width: 45%;
+    padding-right: 70px;
+  }
+
+  &__col:nth-child(2) {
+    width: 55%;
+  }
+
+  &__title {
+    color: $color-white;
+    margin: 10px 0 20px;
+  }
+}

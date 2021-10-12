@@ -1,0 +1,66 @@
+.functional {
+  background: url("../img/functional-bg.png");
+  background-size: 100% 100%;
+  background-position-x: center;
+
+  &__inner {
+    padding: 200px 0;
+  }
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__box {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.functional-item {
+  max-width: 342px;
+
+  &:not(:last-child) {
+    min-height: 190px;
+  }
+
+  &__head {
+    @include flex-v-center;
+    padding-bottom: 20px;
+
+    &--col-first {
+      justify-content: flex-end;
+    }
+  }
+
+  &__title {
+    font-family: "EuropeExt", sans-serif;
+    color: $color-white;
+    font-size: 26px;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 16px;
+    line-height: 21px;
+    opacity: 0.67;
+  }
+
+  &__icon {
+    margin-right: 18px;
+
+    &--right {
+      margin-left: 18px;
+      margin-right: 0;
+    }
+  }
+
+  &--col-first {
+    text-align: right;
+  }
+}

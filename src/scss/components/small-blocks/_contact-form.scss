@@ -1,0 +1,87 @@
+.contact-form {
+  $block-width: 646px;
+  $block-height: 480px;
+  $angle-height: 56px;
+
+  position: relative;
+  padding: 50px 50px 50px 60px;
+  z-index: 1;
+  width: $block-width;
+  min-height: $block-height;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #05101c;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -$angle-height;
+      border-top: $angle-height solid transparent;
+      border-right: $block-width solid #05101c;
+      border-bottom: 0 solid transparent;
+    }
+
+    &--dark {
+      box-shadow: 1px 4px 15px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    &--primary {
+      left: 12px;
+      top: -30px;
+      z-index: 0;
+      background: $color-primary;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: initial;
+        bottom: -$angle-height;
+        border-top: 0 solid transparent;
+        border-right: $block-width solid $color-primary;
+        border-bottom: $angle-height solid transparent;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-white;
+    line-height: 1.4;
+    margin: 30px 0;
+    max-width: 440px;
+  }
+
+  &__form {
+    width: 460px;
+  }
+
+  &__input-wrap:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    width: 320px;
+    height: 73px;
+    margin-top: 40px;
+  }
+}
