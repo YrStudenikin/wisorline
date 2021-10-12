@@ -6,6 +6,13 @@
   text-align: center;
   cursor: default;
 
+  @include media-max (1250) {
+  right: 25px;
+}
+  @include media-max(1200) {
+    top: 70%;
+  }
+
   &__text {
     font-family: 'EuropeExtItalic';
     color: #c8c8c8;

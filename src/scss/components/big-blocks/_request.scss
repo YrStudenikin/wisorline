@@ -7,12 +7,38 @@
   background-repeat: no-repeat;
   margin-bottom: -100px;
 
+  @include media-max(1850) {
+    background-position-y: -270px;
+  }
+
+  @include media-max(1750) {
+    background-position-y: -220px;
+  }
+
+  @include media-max(1620) {
+    background-position-y: -160px;
+  }
+  @include media-max(1500) {
+    background-position-y: -110px;
+  }
+
+  @include media-max(1350) {
+    background-position-y: -50px;
+  }
+  @include media-max(1200) {
+    background-position-y: -120px;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 120px;
+
+    @include media-max(1200) {
+      padding-top: 40px;
+    }
   }
 
   &__title {

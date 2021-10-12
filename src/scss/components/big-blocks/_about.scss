@@ -49,6 +49,10 @@
     color: #686868;
     line-height: 26px;
 
+    @include media-max (1250) {
+      font-size: 16px;
+    }
+
     p:nth-child(2) {
       margin-top: 30px;
     }

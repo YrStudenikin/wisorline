@@ -56,5 +56,9 @@
     color: $color-white;
     opacity: 0.67;
     padding-left: 22px;
+
+    @include media-max(1200) {
+      white-space: nowrap;
+    }
   }
 }

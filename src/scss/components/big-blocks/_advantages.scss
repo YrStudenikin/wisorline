@@ -5,6 +5,13 @@
   background-size: 100% 100%;
   padding: 235px 0 294px;
 
+  @include media-max(1650) {
+    background-size: cover;
+  }
+  @include media-max(1200) {
+    padding: 145px 0 110px;
+  }
+
   &__container {
     max-width: 1390px;
   }
@@ -14,10 +21,19 @@
     &--list {
       width: 1170px;
       margin: 0 auto;
+
+      @include media-max(1400) {
+        max-width: 1100px;
+        width: 100%;
+      }
     }
 
     &--desc {
       padding-top: 260px;
+
+      @include media-max(1200) {
+        padding-top: 70px;
+      }
     }
   }
 
@@ -39,9 +55,15 @@
     color: #ffffff;
     letter-spacing: -0.2px;
 
+
+
     &--list {
       text-align: center;
       margin: 20px 0 90px;
+
+      @include media-max(1200) {
+        margin: 20px 0 50px;
+      }
     }
   }
 }
@@ -49,6 +71,8 @@
 .advantages-box {
   display: flex;
   justify-content: space-between;
+
+
 }
 
 .advantage-item {
@@ -57,6 +81,10 @@
 
   &:not(:last-child) {
     min-height: 255px;
+
+    @include media-max(1200) {
+      min-height: 200px;
+    }
   }
 
   &__title {
@@ -86,6 +114,11 @@
 .advantages-desc {
   display: flex;
 
+  @include media-max(1500) {
+    padding-right: 15px;
+    align-items: center;
+}
+
   &__col:nth-child(1){
     width: 86%;
     max-width: 954px;
@@ -114,6 +147,10 @@
     font-size: 18px;
     color: $color-white;
     line-height: 28px;
+
+    @include media-max(1250) {
+      font-size: 16px;
+    }
   }
 
   &__btn {

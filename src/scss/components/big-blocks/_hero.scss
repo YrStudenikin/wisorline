@@ -5,9 +5,18 @@
   @include bg-cover;
   @include flex-h-center;
 
+  @include media-max(1200) {
+ min-height: 715px;
+  }
+
   &__inner {
     padding-top: calc(170px + 20vh);
     text-align: center;
+
+    @include media-max(1200) {
+      padding-top: calc(90px + 20vh);
+    }
+
   }
 
   &__hint {
@@ -30,6 +39,10 @@
     letter-spacing: -0.2px;
     margin: 10px auto 30px;
     max-width: 1100px;
+
+    @include media-max(1250) {
+      font-size: 40px;
+    }
   }
 
   &__title-linear {

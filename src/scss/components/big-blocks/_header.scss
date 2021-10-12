@@ -6,6 +6,10 @@
   right: 0;
   top: 90px;
 
+  @include media-max(1200) {
+    top: 40px;
+  }
+
   &__inner {
     @include flex-v-center;
     justify-content: space-between;

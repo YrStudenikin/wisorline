@@ -14,10 +14,18 @@
   &__col:nth-child(1) {
     width: 45%;
     padding-right: 70px;
+
+    @include media-max(1200) {
+      width: 40%;
+    }
   }
 
   &__col:nth-child(2) {
     width: 55%;
+
+    @include media-max(1200) {
+      width: 60%;
+    }
   }
 
   &__title {

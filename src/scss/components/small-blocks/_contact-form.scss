@@ -9,6 +9,11 @@
   width: $block-width;
   min-height: $block-height;
 
+  @include media-max(1100) {
+    width: 595px;
+  }
+
+
   &__bg {
     position: absolute;
     top: 0;
@@ -17,6 +22,14 @@
     height: 100%;
     background: #05101c;
     z-index: 1;
+
+    @include media-max(1300) {
+      width: 95%;
+    }
+
+    @include media-max(1200) {
+      width: 90%;
+    }
 
     &:before {
       content: "";
@@ -27,6 +40,13 @@
       border-top: $angle-height solid transparent;
       border-right: $block-width solid #05101c;
       border-bottom: 0 solid transparent;
+
+      @include media-max(1300) {
+        left: -32px;
+      }
+      @include media-max(1200) {
+        border-right: 613px solid #05101c;
+      }
     }
 
     &--dark {
@@ -49,6 +69,15 @@
         border-top: 0 solid transparent;
         border-right: $block-width solid $color-primary;
         border-bottom: $angle-height solid transparent;
+
+
+        @include media-max(1300) {
+          left: -32px;
+        }
+        @include media-max(1200) {
+          left: -64px;
+          border-right: 560px solid #0082fb;
+        }
       }
     }
   }
